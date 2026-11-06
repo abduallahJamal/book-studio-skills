@@ -1,0 +1,6 @@
+interface:
+  display_name: "Book Manuscript Intake (.docx / .pdf / .md)"
+  short_description: "Normalize Word, PDF, or Markdown drafts into clean chapters with footnotes, figures, and content lock"
+  default_prompt: "Use $book-intake to import my manuscript into clean chapters, extract footnotes and figures, and generate manuscript.lock.json."
+policy:
+  allow_implicit_invocation: true

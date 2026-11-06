@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="book-studio-skills — Bilingual AR/EN End-to-End Book Authoring, Tri-Engine Typesetting, RTL/LTR Cover Wrap, EPUB 3 &amp; 15-Gate Preflight QC Suite">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="55%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#132347"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="0%" r="72%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="340" fill="url(#glow)"/>
+
+  <!-- architectural print crop & grid lines -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200"/>
+    <path d="M60 0V340M240 0V340M420 0V340M600 0V340M780 0V340M960 0V340M1140 0V340"/>
+  </g>
+
+  <!-- open book + trim marks emblem top-right -->
+  <g transform="translate(1072, 96)" fill="none">
+    <rect x="-48" y="-48" width="96" height="96" rx="18" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.5"/>
+    <!-- crop marks -->
+    <path d="M-36 -30 V-36 H-30 M30 -36 H36 V-30 M-36 30 V36 H-30 M30 36 H36 V30" stroke="#94A3B8" stroke-opacity="0.6" stroke-width="1.5"/>
+    <!-- open book spread -->
+    <path d="M0 -18 C-10 -24 -22 -24 -30 -20 V20 C-22 16 -10 16 0 22 C10 16 22 16 30 20 V-20 C22 -24 10 -24 0 -18 Z" stroke="url(#accent)" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M0 -18 V22" stroke="#818CF8" stroke-width="2"/>
+    <path d="M-22 -10 H-8 M-22 -2 H-8 M8 -10 H22 M8 -2 H22" stroke="#38BDF8" stroke-opacity="0.75" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- accent bar -->
+  <rect x="72" y="54" width="84" height="5" rx="2.5" fill="url(#accent)"/>
+
+  <text x="72" y="116" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="42" font-weight="800" fill="#F1F5F9">
+    book-studio-skills
+  </text>
+  <text x="72" y="158" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="16.5" fill="#94A3B8">
+    9-Skill Book Publishing Suite (AR RTL &amp; EN LTR) — Typst · HTML/CSS · LaTeX/Quarto · EPUB 3 · 15-Gate Press QC
+  </text>
+
+  <!-- 4 studio bench cards -->
+  <g font-family="Inter, 'Segoe UI', system-ui, sans-serif">
+    <g>
+      <rect x="72" y="206" width="248" height="94" rx="14" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12"/>
+      <rect x="72" y="206" width="5" height="94" rx="2.5" fill="#38BDF8"/>
+      <text x="96" y="241" font-size="16.5" font-weight="700" fill="#E2E8F0">Author &amp; Intake</text>
+      <text x="96" y="266" font-size="12" fill="#94A3B8">DOCX/PDF Lock · Voice &amp; Bible</text>
+      <text x="96" y="285" font-size="11.5" fill="#64748B">Claim Ledger + Humanizer Bridge</text>
+    </g>
+    <g>
+      <rect x="342" y="206" width="248" height="94" rx="14" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12"/>
+      <rect x="342" y="206" width="5" height="94" rx="2.5" fill="#818CF8"/>
+      <text x="366" y="241" font-size="16.5" font-weight="700" fill="#E2E8F0">Tri-Engine Typesetter</text>
+      <text x="366" y="266" font-size="12" fill="#94A3B8">Typst · Paged CSS · Quarto/LaTeX</text>
+      <text x="366" y="285" font-size="11.5" fill="#64748B">6 Themes · Paperback · 16pt Print</text>
+    </g>
+    <g>
+      <rect x="612" y="206" width="248" height="94" rx="14" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12"/>
+      <rect x="612" y="206" width="5" height="94" rx="2.5" fill="#A78BFA"/>
+      <text x="636" y="241" font-size="16.5" font-weight="700" fill="#E2E8F0">Cover, EPUB 3 &amp; Web</text>
+      <text x="636" y="266" font-size="12" fill="#94A3B8">KDP Spine Math · RTL/LTR Mirror</text>
+      <text x="636" y="285" font-size="11.5" fill="#64748B">MathML EPUB 3 · Static Reader</text>
+    </g>
+    <g>
+      <rect x="882" y="206" width="246" height="94" rx="14" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.12"/>
+      <rect x="882" y="206" width="5" height="94" rx="2.5" fill="#22C55E"/>
+      <text x="906" y="241" font-size="16.5" font-weight="700" fill="#E2E8F0">15-Gate Preflight QC</text>
+      <text x="906" y="266" font-size="12" fill="#94A3B8">PyMuPDF Collision &amp; Overflow</text>
+      <text x="906" y="285" font-size="11.5" fill="#64748B">pikepdf PDF/X-1a · Contact Sheet</text>
+    </g>
+  </g>
+</svg>

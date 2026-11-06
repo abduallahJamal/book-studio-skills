@@ -1,0 +1,20 @@
+{
+  "claims": [
+    {
+      "id": "CLM-01",
+      "chapter": "ch-01.md",
+      "claim": "Three sequential tiers each retrying 3 times amplify downstream load up to 64x (4^3).",
+      "numbers": ["3", "4", "64"],
+      "source": "Multiplicative retry cascade formula: (1 + 3)^3 = 64",
+      "verified": true
+    },
+    {
+      "id": "CLM-02",
+      "chapter": "ch-03.md",
+      "claim": "Capping retry ratio at 10% kept checkout success at 99.4% during recommendation cache failure.",
+      "numbers": ["10", "99.4"],
+      "source": "Production load-test benchmark",
+      "verified": true
+    }
+  ]
+}

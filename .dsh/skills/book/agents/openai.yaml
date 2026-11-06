@@ -1,0 +1,6 @@
+interface:
+  display_name: "Book Studio Router (/book)"
+  short_description: "Orchestrate Arabic (RTL) and English (LTR) book authoring, typesetting, cover wrap, EPUB 3, and 15-gate press QC"
+  default_prompt: "Use $book to initialize or orchestrate my book project end-to-end across manuscript, typesetting, cover, EPUB 3, and preflight QC."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,58 @@
+{
+  "title": "هندسة الوكلاء الأذكياء في بيئات الإنتاج",
+  "language": "ar",
+  "direction": "rtl",
+  "style_pack": "technical-code",
+  "total_target_words": 2400,
+  "voice_locked": true,
+  "chapters": [
+    {
+      "number": 1,
+      "id": "ch-01",
+      "file": "manuscript/chapters/ch-01.md",
+      "title": "الفصل الأول: لماذا تنهار النماذج التجريبية عند أول مستخدم حقيقي؟",
+      "opening_hook_type": "failure-postmortem",
+      "core_question": "ما الفجوة البنيوية بين عرض توضيحي ناجح ونظام إنتاجي يتحمل ضغط الواقع؟",
+      "key_takeaway": "الاعتمادية تنبع من العقود البرمجية المحيطة بالنموذج لا من إطالة التعليمات النصية.",
+      "target_words": 600,
+      "sections": ["وهم الدقائق الخمس", "تشريح الأعطال الصامتة"],
+      "planned_figures": ["fig-01-pipeline.svg"]
+    },
+    {
+      "number": 2,
+      "id": "ch-02",
+      "file": "manuscript/chapters/ch-02.md",
+      "title": "الفصل الثاني: فصل التخطيط عن التنفيذ الحتمي",
+      "opening_hook_type": "counterintuitive-paradox",
+      "core_question": "كيف نوزع المهام بين الاستدلال اللغوي والكود القياسي الصارم؟",
+      "key_takeaway": "كل عملية حسابية أو فحص هندسي يجب أن ينفذها سكربت حتمي لا تخمين لغوي.",
+      "target_words": 600,
+      "sections": ["قاعدة الفصل الصارم", "نموذج عقد الأداة"],
+      "planned_figures": []
+    },
+    {
+      "number": 3,
+      "id": "ch-03",
+      "file": "manuscript/chapters/ch-03.md",
+      "title": "الفصل الثالث: ميزانية زمن الاستجابة وضبط التكلفة",
+      "opening_hook_type": "field-observation",
+      "core_question": "كيف نمنع تضخم زمن الاستجابة وتكلفة الرموز في الحلقات متعددة الخطوات؟",
+      "key_takeaway": "سقف الخطوات ومهلة القطع المبكر يحميان النظام من الدوران اللانهائي.",
+      "target_words": 600,
+      "sections": ["معادلة الكمون التراكمي", "مصفوفة الأداء والتكلفة"],
+      "planned_figures": []
+    },
+    {
+      "number": 4,
+      "id": "ch-04",
+      "file": "manuscript/chapters/ch-04.md",
+      "title": "الفصل الرابع: بوابات الفحص قبل الإطلاق والمراقبة الحية",
+      "opening_hook_type": "diagnostic-question",
+      "core_question": "ما الاختبارات التي تضمن عدم تراجع جودة الوكيل بعد كل تحديث؟",
+      "key_takeaway": "لا يُعتمد أي إصدار دون مجموعة حالات مرجعية تقيس الدقة والانحراف.",
+      "target_words": 600,
+      "sections": ["حزمة الاختبار الذهبية", "قائمة الجاهزية للإنتاج"],
+      "planned_figures": []
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 418" width="840" height="418">
+  <rect x="1" y="1" width="838" height="416" rx="12" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"/>
+  <text x="420" y="38" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="bold" fill="#0F172A">Four Layers of Production Containment</text>
+  <rect x="48" y="64" width="744" height="62" rx="8" fill="#F8FAFC" stroke="#334155" stroke-width="1.5"/>
+  <rect x="64" y="77" width="42" height="36" rx="6" fill="#0F172A"/>
+  <text x="85" y="100" text-anchor="middle" font-family="DejaVu Sans Mono, monospace" font-size="13" font-weight="bold" fill="#FFFFFF">01</text>
+  <text x="122" y="91" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">Edge Admission &amp; Load Shedding</text>
+  <text x="122" y="112" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#475569">Bound queue depth before threads saturate</text>
+  <line x1="420" y1="129" x2="420" y2="147" stroke="#334155" stroke-width="2"/>
+  <polygon points="415,142 425,142 420,149" fill="#334155"/>
+  <rect x="48" y="152" width="744" height="62" rx="8" fill="#F8FAFC" stroke="#334155" stroke-width="1.5"/>
+  <rect x="64" y="165" width="42" height="36" rx="6" fill="#0F172A"/>
+  <text x="85" y="188" text-anchor="middle" font-family="DejaVu Sans Mono, monospace" font-size="13" font-weight="bold" fill="#FFFFFF">02</text>
+  <text x="122" y="179" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">Idempotent State Transitions</text>
+  <text x="122" y="200" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#475569">Safe retries keyed by client mutation token</text>
+  <line x1="420" y1="217" x2="420" y2="235" stroke="#334155" stroke-width="2"/>
+  <polygon points="415,230 425,230 420,237" fill="#334155"/>
+  <rect x="48" y="240" width="744" height="62" rx="8" fill="#F8FAFC" stroke="#334155" stroke-width="1.5"/>
+  <rect x="64" y="253" width="42" height="36" rx="6" fill="#0F172A"/>
+  <text x="85" y="276" text-anchor="middle" font-family="DejaVu Sans Mono, monospace" font-size="13" font-weight="bold" fill="#FFFFFF">03</text>
+  <text x="122" y="267" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">Strict Timeout &amp; Bulkhead Isolation</text>
+  <text x="122" y="288" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#475569">Prevent one slow dependency from sinking the fleet</text>
+  <line x1="420" y1="305" x2="420" y2="323" stroke="#334155" stroke-width="2"/>
+  <polygon points="415,318 425,318 420,325" fill="#334155"/>
+  <rect x="48" y="328" width="744" height="62" rx="8" fill="#F8FAFC" stroke="#334155" stroke-width="1.5"/>
+  <rect x="64" y="341" width="42" height="36" rx="6" fill="#0F172A"/>
+  <text x="85" y="364" text-anchor="middle" font-family="DejaVu Sans Mono, monospace" font-size="13" font-weight="bold" fill="#FFFFFF">04</text>
+  <text x="122" y="355" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="bold" fill="#0F172A">Graceful Degradation &amp; Fast Recovery</text>
+  <text x="122" y="376" text-anchor="start" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#475569">Serve cached core value when non-critical tiers fail</text>
+</svg>

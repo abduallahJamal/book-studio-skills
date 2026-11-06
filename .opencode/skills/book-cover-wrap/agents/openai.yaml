@@ -1,0 +1,6 @@
+interface:
+  display_name: "Book Cover Wrap (KDP Spine & RTL/LTR Mirror)"
+  short_description: "Compute KDP/IngramSpark spine caliper from actual PDF pages and render RTL/LTR full-wrap and eBook covers"
+  default_prompt: "Use $book-cover-wrap to compute exact spine dimensions from my compiled interior PDF and render print wraparound and eBook covers."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,35 @@
+{
+  "slug": "resilient-systems-en",
+  "language": "en",
+  "direction": "ltr",
+  "title": "The Craft of Resilient Systems",
+  "subtitle": "Designing Software That Survives Real-World Traffic",
+  "author": "Abduallah Jamal",
+  "publisher": "Studio Systems Press",
+  "publication_year": 2026,
+  "copyright_holder": "Abduallah Jamal",
+  "back_cover_blurb": "A concise field guide to building calm, predictable distributed systems through explicit failure budgets, backpressure, idempotency, and automated verification gates.",
+  "isbn": {
+    "paperback": "978-0-990001-10-1",
+    "hardcover": "978-0-990001-11-8",
+    "ebook": "978-0-990001-12-5"
+  },
+  "style_pack": "trade-nonfiction",
+  "engines": ["typst", "html", "quarto"],
+  "print": {
+    "trim": "5.5x8.5",
+    "paper_stock": "cream",
+    "ink": "bw",
+    "bleed_in": 0.125,
+    "min_pages": 24,
+    "editions": ["paperback", "hardcover", "large-print"]
+  },
+  "digital": {
+    "epub3": true,
+    "web_book": true
+  },
+  "humanizer": {
+    "enabled": true,
+    "voice": "clear-thinker"
+  }
+}

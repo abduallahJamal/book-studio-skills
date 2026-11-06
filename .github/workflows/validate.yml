@@ -1,0 +1,57 @@
+name: validate
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate Book Studio Skills, Tri-Engine Build & 15-Gate Press QC
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Arabic/Latin fonts, Ghostscript & Typst compiler
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri fonts-noto-core fonts-dejavu ghostscript xz-utils
+          curl -fsSL https://github.com/typst/typst/releases/download/v0.13.1/typst-x86_64-unknown-linux-musl.tar.xz -o /tmp/typst.tar.xz
+          tar -xf /tmp/typst.tar.xz -C /tmp
+          sudo cp /tmp/typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          typst --version
+          gs --version
+
+      - name: Install Python publishing dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check shell script syntax
+        run: bash -n install.sh scripts/sync-platforms.sh
+
+      - name: Verify multi-agent SHA-256 parity (.opencode, .claude, .agents, .dsh)
+        run: ./scripts/sync-platforms.sh --check
+
+      - name: Run schema, link, .docx intake & full AR (RTL) / EN (LTR) 15-gate book build suite
+        run: python3 scripts/validate.py --github-annotations
+
+      - name: Smoke-test installer across all 4 harnesses
+        run: |
+          ./install.sh --list
+          ./install.sh --all --project /tmp/book-studio-install-smoke
+          test -f /tmp/book-studio-install-smoke/.opencode/commands/book.md
+          test -f /tmp/book-studio-install-smoke/.opencode/skills/book-typesetter/SKILL.md
+          test -f /tmp/book-studio-install-smoke/.claude/skills/book-cover-wrap/SKILL.md
+          test -f /tmp/book-studio-install-smoke/.agents/skills/book-ebook-web/SKILL.md
+          test -f /tmp/book-studio-install-smoke/.codex/skills/book-preflight-qc/SKILL.md
+          test -f /tmp/book-studio-install-smoke/.dsh/skills/book/SKILL.md

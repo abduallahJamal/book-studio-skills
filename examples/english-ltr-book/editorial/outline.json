@@ -1,0 +1,58 @@
+{
+  "title": "The Craft of Resilient Systems",
+  "language": "en",
+  "direction": "ltr",
+  "style_pack": "trade-nonfiction",
+  "total_target_words": 2400,
+  "voice_locked": true,
+  "chapters": [
+    {
+      "number": 1,
+      "id": "ch-01",
+      "file": "manuscript/chapters/ch-01.md",
+      "title": "Chapter 1: Retries Are Amplifiers in Disguise",
+      "opening_hook_type": "concrete-incident",
+      "core_question": "Why do naive retry loops turn brief network blips into total cluster outages?",
+      "key_takeaway": "Unbounded retries multiply load exactly when downstream capacity is lowest.",
+      "target_words": 600,
+      "sections": ["The Tuesday Traffic Spike", "Token-Bucket Retry Budgets"],
+      "planned_figures": ["fig-01-architecture.svg"]
+    },
+    {
+      "number": 2,
+      "id": "ch-02",
+      "file": "manuscript/chapters/ch-02.md",
+      "title": "Chapter 2: Queues Never Create Capacity",
+      "opening_hook_type": "counterintuitive-paradox",
+      "core_question": "When does adding a queue improve throughput versus merely delaying failure?",
+      "key_takeaway": "Unbounded queues convert transient spikes into universal timeout storms.",
+      "target_words": 600,
+      "sections": ["Little's Law Under Pressure", "LIFO Admission and Deadlines"],
+      "planned_figures": []
+    },
+    {
+      "number": 3,
+      "id": "ch-03",
+      "file": "manuscript/chapters/ch-03.md",
+      "title": "Chapter 3: Bulkheads and Graceful Fallbacks",
+      "opening_hook_type": "field-observation",
+      "core_question": "How do we isolate secondary feature failures from core checkout paths?",
+      "key_takeaway": "Separate connection pools keep optional widgets from starving primary transactions.",
+      "target_words": 600,
+      "sections": ["Pool Partitioning", "Degradation Modes Compared"],
+      "planned_figures": []
+    },
+    {
+      "number": 4,
+      "id": "ch-04",
+      "file": "manuscript/chapters/ch-04.md",
+      "title": "Chapter 4: Game Days That Actually Teach",
+      "opening_hook_type": "diagnostic-question",
+      "core_question": "How do engineering teams verify recovery procedures before 3 a.m.?",
+      "key_takeaway": "Untested runbooks decay within a single quarter.",
+      "target_words": 600,
+      "sections": ["Controlled Fault Injection", "The Pre-Release Checklist"],
+      "planned_figures": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Book Illustrator & SVG/DPI Hygiene"
+  short_description: "Audit print SVGs, enforce 300-DPI raster resolution, strip backgrounds, and render vector diagrams"
+  default_prompt: "Use $book-illustrator to prepare clean print-safe SVG diagrams and verify 300-DPI figure hygiene for my book."
+policy:
+  allow_implicit_invocation: true

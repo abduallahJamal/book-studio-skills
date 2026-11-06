@@ -1,0 +1,26 @@
+{
+  "title": "Four Layers of Production Containment",
+  "direction": "ltr",
+  "steps": [
+    {
+      "badge": "01",
+      "label": "Edge Admission & Load Shedding",
+      "detail": "Bound queue depth before threads saturate"
+    },
+    {
+      "badge": "02",
+      "label": "Idempotent State Transitions",
+      "detail": "Safe retries keyed by client mutation token"
+    },
+    {
+      "badge": "03",
+      "label": "Strict Timeout & Bulkhead Isolation",
+      "detail": "Prevent one slow dependency from sinking the fleet"
+    },
+    {
+      "badge": "04",
+      "label": "Graceful Degradation & Fast Recovery",
+      "detail": "Serve cached core value when non-critical tiers fail"
+    }
+  ]
+}

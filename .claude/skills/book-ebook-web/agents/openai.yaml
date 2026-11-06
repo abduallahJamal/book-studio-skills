@@ -1,0 +1,6 @@
+interface:
+  display_name: "EPUB 3 & Static Web Book Builder"
+  short_description: "Generate validated RTL/LTR EPUB 3.3 packages with MathML plus searchable Static HTML Web Books"
+  default_prompt: "Use $book-ebook-web to build and validate an EPUB 3 eBook and Static HTML Web Book from my manuscript."
+policy:
+  allow_implicit_invocation: true

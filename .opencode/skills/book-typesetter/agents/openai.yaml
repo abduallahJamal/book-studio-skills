@@ -1,0 +1,6 @@
+interface:
+  display_name: "Tri-Engine Book Typesetter (Typst / CSS / LaTeX)"
+  short_description: "Compile Paperback, Hardcover, Large-Print 16pt, and Screen interiors in Arabic (RTL) or English (LTR)"
+  default_prompt: "Use $book-typesetter to typeset my manuscript into print and screen editions across Typst, HTML/CSS, or LaTeX/Quarto."
+policy:
+  allow_implicit_invocation: true

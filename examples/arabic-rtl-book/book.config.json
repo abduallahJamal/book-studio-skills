@@ -1,0 +1,35 @@
+{
+  "slug": "agentic-production-ar",
+  "language": "ar",
+  "direction": "rtl",
+  "title": "هندسة الوكلاء الأذكياء في بيئات الإنتاج",
+  "subtitle": "من النماذج التجريبية إلى الأنظمة الحتمية الموثوقة",
+  "author": "عبد الله جمال",
+  "publisher": "دار الهندسة التقنية للنشر",
+  "publication_year": 2026,
+  "copyright_holder": "عبد الله جمال",
+  "back_cover_blurb": "دليل هندسي عملي يشرح كيف تنتقل فرق البرمجيات من النماذج التجريبية الهشة إلى أنظمة وكيلية منضبطة ببوابات فحص حتمية وقياس دقيق لزمن الاستجابة والتكلفة.",
+  "isbn": {
+    "paperback": "978-977-99001-0-4",
+    "hardcover": "978-977-99001-1-1",
+    "ebook": "978-977-99001-2-8"
+  },
+  "style_pack": "technical-code",
+  "engines": ["typst", "html", "quarto"],
+  "print": {
+    "trim": "6x9",
+    "paper_stock": "white",
+    "ink": "bw",
+    "bleed_in": 0.125,
+    "min_pages": 24,
+    "editions": ["paperback", "hardcover", "large-print"]
+  },
+  "digital": {
+    "epub3": true,
+    "web_book": true
+  },
+  "humanizer": {
+    "enabled": true,
+    "voice": "clear-thinker"
+  }
+}

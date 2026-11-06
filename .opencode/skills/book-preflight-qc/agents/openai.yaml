@@ -1,0 +1,6 @@
+interface:
+  display_name: "15-Gate Book Preflight QC & PDF/X-1a"
+  short_description: "Strip annotations, distill PDF/X-1a, run 15 physical PyMuPDF geometry gates, and render contact sheets"
+  default_prompt: "Use $book-preflight-qc to run press_pdfx.py and all 15 physical preflight QC gates on my book build."
+policy:
+  allow_implicit_invocation: true

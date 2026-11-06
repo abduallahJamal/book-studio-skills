@@ -1,0 +1,6 @@
+interface:
+  display_name: "Book Drafter & Editorial Engine"
+  short_description: "Draft book chapters with continuity locks, Claim Ledger fact tracking, and AR/EN anti-slop metrics"
+  default_prompt: "Use $book-drafter to draft or edit chapters with full continuity, grounded claims, and zero AI-slop phrasing."
+policy:
+  allow_implicit_invocation: true

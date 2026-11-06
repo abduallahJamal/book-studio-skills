@@ -1,0 +1,6 @@
+interface:
+  display_name: "Book Architect (Outline, Bibles & Voice Lock)"
+  short_description: "Plan chapter outlines, bilingual terminology bibles, art bibles, and Voice Lock samples from a raw topic"
+  default_prompt: "Use $book-architect to design a non-overlapping chapter outline, Book Bible, Art Bible, and Voice Lock sample for my book."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,14 @@
+{
+  "name": "book-studio-skills-marketplace",
+  "owner": {
+    "name": "Abduallah Jamal"
+  },
+  "plugins": [
+    {
+      "name": "book-studio-skills-suite",
+      "source": "./",
+      "description": "9 modular AR/EN book creation & publishing skills: book router, intake, architect, drafter, illustrator, tri-engine typesetter, RTL/LTR cover-wrap, epub-web, and 15-gate preflight-qc.",
+      "version": "1.0.0"
+    }
+  ]
+}

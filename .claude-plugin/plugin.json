@@ -1,0 +1,21 @@
+{
+  "name": "book-studio-skills-suite",
+  "version": "1.0.0",
+  "description": "Bilingual (AR RTL & EN LTR) end-to-end book authoring, Tri-Engine typesetting (Typst, HTML/CSS Paged Media, LaTeX/Quarto), KDP/IngramSpark RTL/LTR cover wrap, EPUB 3 + Static Web Book, and 15-gate PyMuPDF/pikepdf preflight QC skills.",
+  "author": {
+    "name": "Abduallah Jamal"
+  },
+  "license": "MIT",
+  "keywords": [
+    "book",
+    "typesetting",
+    "typst",
+    "epub3",
+    "kdp",
+    "pdfx",
+    "arabic-rtl",
+    "publishing",
+    "skills"
+  ],
+  "skills": "./skills/"
+}
